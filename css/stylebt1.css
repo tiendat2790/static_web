@@ -1,0 +1,29 @@
+h1 {
+    font-size: 30px;
+    color: magenta;
+    text-align: center;
+    text-shadow: black 2px 3px 4px;
+}
+h2 {
+    text-align: center;
+    font-style: oblique;
+    background-color: rgb(212, 150, 127) ;
+    height: 120px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:purple;
+    border-radius: 8px;
+}
+#n0 {
+    text-align: center;
+    color: rgba(9, 10, 105, 0.986);
+}
+#n1 { 
+    color: blue;
+}
+#n2 {
+    color: brown;
+}
+div {
+    background-image: url('http://cur.glitter-graphics.net/pub/3382/3382373phgt69dixg.jpg')
+}
