@@ -16,6 +16,7 @@ ul {
     border: 1px soli gray;
     border-collapse: collapse;
 }
+
 .table th {
     background-color: #008040;
     color: white;
@@ -30,19 +31,20 @@ h2 {
     font-size: 30px;
     text-shadow: 2px 3px 4px gray;
 }
-p {
+#p1 {
     font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 tr:nth-child(2n) {
     background-color: #F0F0F0;
 }
-.xem {
+.xemcode {
     margin-top: 15px;
     margin-bottom: 12px;
 }
-a {
+#p2 {
+    width: 12%;
     padding-top: 5px;
     padding-right: 10px;
     padding-bottom: 5px;
