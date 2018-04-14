@@ -10,21 +10,44 @@ ul {
     list-style-image: url(../icon.png);
     
 }
-
-th, td {
-    text-align: center;
-    height: 50px;
-    vertical-align: bottom;
-    border-top:1px solid gray;
-    border-bottom: 1px solid gray;
-}
-
-table {
+.table {
+    width: 805px;
+    font-size: 20px;
+    border: 1px soli gray;
     border-collapse: collapse;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
 }
-
-tr:nth-child(2n+1) {
-    background-color: gray;
+.table th {
+    background-color: #008040;
+    color: white;
+    padding: 7px 15px;
+    border: 1px solid gray;
+}
+.table td {
+    padding: 7px 15px;
+    border: 1px solid gray;
+}
+h2 {
+    font-size: 30px;
+    text-shadow: 2px 3px 4px gray;
+}
+p {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+tr:nth-child(2n) {
+    background-color: #F0F0F0;
+}
+.xem {
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+a {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: rgb(100, 158, 14);
+    color: white;
+    box-shadow: 3px 3px 5px black;
 }
