@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(242, 239, 239) !important;
+    margin: 0px;
+}
+.float_left{
+    float: left;
+
+}
+
+.header {
+    height: 42px;
+    background-color: rgb(24, 148, 243);
+    border-bottom: 1px solid black;
+
+}
+.header ul{
+    list-style-type: none;
+    width: 830px;
+    margin: auto;
+    
+
+}
+.header ul li{
+    color: white;
+    float: left;
+    line-height: 42px;
+    margin-right: 30px;
+    padding-left: 2px;
+}
+.header ul li .icon_photo_1 {
+    background-image:  url(../img/icon_photo_1.jpg);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+}
+.header ul li .icon_photo_2 {
+    background-image:  url(../img/icon_photo_2.jpg);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+}
+.header ul li .icon_photo_3 {
+    background-image:  url(../img/icon_photo_3.jpg);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+}
+.header ul li .icon_photo_4 {
+    background-image:  url(../img/icon_photo_4.jpg);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+}
+.header ul li .icon_photo_5 {
+    background-image:  url(../img/icon_photo_5.jpg);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+}
+.header ul li .icon_photo_6 {
+    background-image:  url(../img/icon_photo_6.jpg);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+}
+.header ul li .icon_photo_7 {
+    background-image:  url(../img/icon_photo_7.jpg);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+}
+
+
+.header ul li p{
+    margin: 0px;
+    padding-left: 20px;
+}
+
+
+.content {
+    width: 1250px;
+    height: 600px;
+    margin: 40px auto ;
+    overflow: hidden;
+
+}
+.content_left {
+    width: 598px;
+    margin-right: 30px;
+    height: 600px;
+    background-image: url(../img/bg_content_left.jpg);  
+}
+.content_left .all_post{
+    border: 1px solid #cad8f3;
+    text-align: center;
+    background-color: rgb(252, 249, 249);
+    
+}
+.content_left .all_post h3{
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+.content_left .all_post span{
+    color: rgb(14, 130, 219);
+}s
