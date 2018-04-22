@@ -1,35 +1,40 @@
-var typeInterger = 100;
-var typeString = 'Hello';
-var typeBoolean = 'true';
-var typeObject= {
-    name: 'dat',
-    age: 25
-}
-
-
-var a = 20 < 3;
-var a = 20 > 3;
-
 
 function introProfile() {
     var name = 'Đạt';
-    var height = 175;
-    var weight = 60;
     var age = 25;
     var job = 'Công Nhân';
-    var wife = 'Giang';
-    var son = 'Shin';
-
-   return 'Tôi tên là ' + name + ' .Tôi cao ' + height + ' cm. Tôi nặng ' + weight + ' kg. Tôi ' + age + 'tuổi. Hiện tại tôi đang làm ' + job + '. Vợ tôi là ' + wife + '. Con trai tôi là ' + son;
+    
+    return 'Tôi tên là ' + name + ', tôi ' + age + ' tuổi. Tôi là một ' + job;
 }
 
-function introProfile2(name, height, weight, age, job, wife, son) {
-
-    return 'Tôi tên là ' + name + ' .Tôi cao ' + height + ' cm. Tôi nặng ' + weight + ' kg. Tôi ' + age + 'tuổi. Hiện tại tôi đang làm ' + job + '. Vợ tôi là ' + wife + '. Con trai tôi là ' + son;
+function introProfile2(name, age, job) {
+    return 'Tôi tên là ' + name + ', tôi ' + age + ' tuổi. Tôi là một ' + job;
 }
 
-var result = introProfile();
-var result = introProfile2('Đạt', 175, 60, 25, 'Công Nhân', 'Giang', 'Shin')
+function getMyProfile(name, age, job) {
+    var  profile = 'Tôi tên là ' + name + ', tôi ' + age + ' tuổi. Tôi là một ' + job;
+    document.getElementById('my-profile').innerHTML = profile;
+}
+function hideMyProfile() {
+    document.getElementById('my-profile').innerHTML = '';
+}
 
-document.getElementById('my-profile').innerHTML = result;
-document.getElementById('my-profile2').innerHTML = result;
+function getNameStudent(student) {
+    var name = student.name;
+    document.getElementById('student').innerHTML = name;
+}
+
+function getAgeStudent(student) {
+    var age = student.age;
+    document.getElementById('student').innerHTML = age;
+}
+
+function getSexStudent(student) {
+    var sex = student.sex;
+    document.getElementById('student').innerHTML = sex;
+}
+
+function Learning(student) {
+    student.learn();
+}
+console.log(student);

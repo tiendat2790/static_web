@@ -3,18 +3,33 @@
 
 <head>
     <title>Lập Trình Web</title>
+    <script>
+        var student = {
+            name: 'Đạt',
+            age: 25,
+            sex: 'Nam',
+            learn: function () {
+                alert('Tôi đang học bài');
+            }
+        }
+
+    </script>
 </head>
 
 <body>
     <h2>Kiểu dư liệu</h2>
     <h4> My Profile:</h4>
+    <button onclick="getMyProfile('Đạt', 25, 'Công Nhân');">Show my profile</button>
+    <button onclick="hideMyProfile();">Hide my profile</button>
     <p id="my-profile"></p>
-    <hr/>
-    <p id="my-profile2"></p>
-    <hr/>
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1444181859069689%26set%3Da.100929180061637.1716.100004336651531%26type%3D3&width=500"
-        width="500" height="613" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-        allow="encrypted-media"></iframe>
+
+    <h3>Student :</h3>
+    <button onclick="getNameStudent(student);">Tên của student</button>
+    <button onclick="getAgeStudent(student);">Tuổi của student</button>
+    <button onclick="getSexStudent(student);">Giới tính student</button>
+    <button onclick="Learning(student);">Học bài</button>
+    <p id="student"></p>
+
     <script src="./js/lession3.js"></script>
 </body>
 
