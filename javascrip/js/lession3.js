@@ -13,7 +13,7 @@ var a = 20 > 3;
 
 function introProfile() {
     var name = 'Đạt';
-    var height = 170;
+    var height = 175;
     var weight = 60;
     var age = 25;
     var job = 'Công Nhân';
@@ -29,7 +29,7 @@ function introProfile2(name, height, weight, age, job, wife, son) {
 }
 
 var result = introProfile();
-var result = introProfile2('Đạt', 170, 60, 25, 'Công Nhân', 'Giang', 'Shin')
+var result = introProfile2('Đạt', 175, 60, 25, 'Công Nhân', 'Giang', 'Shin')
 
 document.getElementById('my-profile').innerHTML = result;
 document.getElementById('my-profile2').innerHTML = result;
