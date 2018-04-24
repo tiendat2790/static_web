@@ -9,6 +9,11 @@ var Color = {
     }
 };
 
+function clickTobutton() {
+    var a = 'Xin chào',
+    
+    alert(a)
+}
 
 var Song = {
     showLyrics : function() {
