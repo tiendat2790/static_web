@@ -1,0 +1,87 @@
+1. Đếm số lượng ký tự của chuỗi : <br/>
+<script>
+    var text = "tai lieu hoc JavaScript";
+    var a = text.length; //Biến a có giá trị là 20
+    var b = "JavaScrip".length; //Biến b có giá trị là 10
+</script>
+
+2. Chuyển chuỗi về dạng chữ in hoa :
+<script>
+    var text = "tai lieu hoc JavaScript"
+    var a = text.toUpperCase(); // Biến a có giá trị là TAI LIEU HOC JAVASCRIPT
+    var b = "JavaScript".toUpperCase(); // Biến b có giá trị là JAVASCRIPT
+</script>
+
+3. Chuyển chuỗi về dạng chữ in thường :
+<script>
+    var text = "tai lieu hoc JavaScript";
+    var a = text.toLowerCase(); // Biến a có giá trị là tai lieu hoc javascript
+    var b =  "JavaScript".toLowerCase();// Biến b có giá trị là javascript
+</script>
+
+4. Nối các chuỗi lại với nhau :
+<script>
+    var a = "Lập";
+    var b = "trình";
+    var c = " web";
+
+    var str1 = a.concat(b, c); //Tương tự "Lập " + "trình" + " web"
+    var str2 = a.concat(b, "di động"); //Tương tự "Lập " + "trình" + " di động"
+    var str3 = "Java".concat("Script"); //Tương tự "Java" + "Script"
+</script> 
+
+5. Xác định 1 chuỗi con :
+<script>
+    var text = "Tài liệu học HTML và tài liệu học CSS";
+    var a = text.indexOf("học") // Biến a sẽ cố gía trị là 9
+    var b = text.lastIndexOf("học") // Biến a sẽ có giá trị là 30
+</script>
+
+<script>
+    var text = "Tài liệu học HTML và tài liệu học CSS";
+    var a = text.indexOf("học", 21); //Biến a sẽ có giá trị là 30
+</script>
+
+6. Trích xuất một ký tự trong chuỗi :
++ Phương thức substring()
+<script>
+    var text = "TÀI LIỆU HỌC HTML";
+    var a = text.substring(4, 14); // Biến a sẽ có giá trị là LIỆU HỌC H
+</script>
++ Phương thức substring :
+<script>
+    var text = "TÀI LIỆU HỌC HTML";
+    var a = text.substr(4, 3); // Biến a sẽ có giá trị là LIỆ
+</script>
+
+7. Thay thế nội dung trong chuỗi :
+<script>
+    var text = " Tài liệu học HTML";
+    var a =  text.replace("học", "tham khảo"); //Thay thế chữ "học" thành chữ "tham khảo"
+</script>
++ Thay thế tất cả các nội dung trùng khớp :
+<script>
+    var text = "Tài liệu học HTML va tài liệu học CSS";
+    var a = text.replace("học", "tham khảo"); //Trong chuỗi text bên dưới có hai chữ "học", tuy nhiên chỉ có chữ học đầu tiên là được đổi thành chữ "tham khảo"
+</script>
+
+<script>
+    var text = "Tài liệu học HTML va tài liệu học CSS";
+    var a = text.replace(/học/g, "tham khảo"); // Thay thế tất cả nội dung trùng khớp (tất cả các chữ "học")
+</script>
++ Thay thế nội dung không phân biệt trường hợp chữ hoa hay thường :
+  - Mặc định, phương thức replace() có phân biệt trường hợp chữ in hoa và chữ thường
+<script>
+    var text = "Tài liệu học HTML";
+    var a = text.replace("HọC", "tham khảo");
+</script>
+  - Thay thế nội dung trùng khớp mà không phân biệt trường hợp chữ in hoa hay chữ thường :
+ <script>
+    var text = "Tài liệu học HTML";
+    var a = text.replace(/HọC/i, "tham khảo");
+</script>
+  - Thay thế tất cả nội dung trùng khớp mà không phân biệt trường hợp chữ in hoa hay chữ thường :
+<script>
+    var text = "Tài liệu học HTML và tài liệu học CSS";
+    var a = text.replace(/HọC/gi, "tham khảo");
+</script>

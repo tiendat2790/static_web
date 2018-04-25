@@ -1,0 +1,91 @@
+Cách bắt sự kiện trong JavaScript :
+
++ Ví dụ : Khi double click vào nút " Xem kết quả" thì đoạn mã :
+"var a = 100;var b = 50;var result = (a + b)*2;alert('Kết quả của biểu thức là: ' + result)" sẽ đc thực thi là :
+>>> Kết quả của biểu thức là: 300
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button ondblclick="var a = 100;var b = 50;var result = (a + b)*2;alert('Kết quả của biểu thức là: ' + result)">Xem kết quả</button>
+</body>
+
+</html>
+
++ Ví dụ : Khi  click chuột vào nút "Xin chào" thì hàm hello() sẽ được thực thi :
+>>> Tôi tên Nguyễn Thành Nhân sinh năm 1993
+
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="hello()">Xin chào</button>
+    <p id="demo"></p>
+    <script>
+        function hello(){
+            var name = "Nguyễn Thành Nhân";
+            var year = 1993;
+            var str = "Tôi tên " + name + " sinh năm " + year;
+            document.getElementById("demo").innerHTML = str;
+        }
+    </script>
+</body>
+</html>
+
++ Với cùng 1 phần tử ta có thể bắt niều sự kiện cho nó :
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        #demo{
+            width:300px;
+            height:200px;
+            background-color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo" onmouseenter="this.style.backgroundColor='yellow'" onmouseleave="this.style.backgroundColor='gray'"></div>
+</body>
+</html>
+
++ Nếu đoạn mã được viết bên trong bên trong cặp dấu nháy kép thì trong đoạn mã tuyệt đối không được chứa ký tự là dấu nháy kép
++ Nếu đoạn mã được viết bên trong bên trong cặp dấu nháy đơn thì trong đoạn mã tuyệt đối không được chứa ký tự là dấu nháy đơn
+    <button onclick="alert("Hello")">Xin chào</button> <!-- SAI -->
+    <button onclick='alert('Hello')'>Xin chào</button> <!-- SAI -->
+    <button onclick="alert('Hello')">Xin chào</button> <!-- ĐÚNG -->
+    <button onclick='alert("Hello")'>Xin chào</button> <!-- ĐÚNG -->
+
++ Sự kiện xảy ra khi người dùng đang nhấn một phím (onkeydown)
++ Sự kiện Sự kiện xảy ra khi người dùng nhả phím ra (onkeyup)
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" onkeydown="this.style.backgroundColor='pink'" onkeyup="this.style.backgroundColor='yellow'" placeholder="gõ ký tự vào đây">
+</body>
+</html>
+
++ Sự kiện xảy ra khi người dùng sao chép nội dung của phần tử (oncopy)
++ Sự kiện xảy ra khi người dùng cắt nội dung của phần tử (oncut)
++ Sự kiện xảy ra khi người dùng dán nội dung vào phần tử (onpaste)
+<!DOCTYPE html>
+<html>
+<body>
+    <textarea cols="50" rows="15" oncopy="alert('Bạn vừa sao chép nội dung của phần tử này')" oncut="alert('Bạn vừa cắt nội dung của phần tử này')" onpaste="alert('Bạn vừa dán nội dung vào phần tử này')">Tài liệu hướng dẫn học lập trình web</textarea>
+</body>
+</html>
+
++ Sự kiện xảy ra khi người dùng thay đổi giá trị của phần tử (onchange)
+<!DOCTYPE html>
+<html>
+<body>
+    <select onchange="alert('Bạn vừa thay đổi giá trị của phần tử này')">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="mysql">MySQL</option>
+        <option value="php">PHP</option>
+    </select>
+</body>
+</html>
