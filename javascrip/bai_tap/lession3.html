@@ -1,0 +1,116 @@
+1. Phương thức toString() (Chuyển một giá trị về dạng chuỗi ký tự)
+    <script>
+        var a = 1993;
+        var b = a.toString();
+    </script>
+    >>> Biến b sẽ có giá trị là 1993 với kiểu dữ liệu là string
+    
+    <script>
+        var a = 1993;
+        var b = a.toString(2); //Biến b có giá trị là 11111001001 (Nếu đối số là 2 thì giá trị ban đầu sẽ được trả về chuỗi giá trị nhị phân)
+        var c = a.toString(8); //Biến c có giá trị là 3711 (Nếu đối số là 8 thì giá trị ban đầu sẽ được trả về chuỗi giá trị bát phân)
+        var d = a.toString(16); //Biến d có giá trị là 7c9 (Nếu đối số là 16 thì giá trị ban đầu sẽ được trả về chuỗi giá trị thập lục phân)
+    </script>
+
+2. Phương thức toExponential()  (dùng để trả về chuỗi biểu thức mũ của một số)
+    <script>
+        var a = 1993;
+        var b = a.toExponential(); //Biến b sẽ có giá trị là chuỗi 1.993e+3
+    </script>
+
+    <script>
+        var a = 111111111;
+        var b = a.toExponential(2); //Phần thập phân của biểu thức mũ của biến b sẽ có 2 ký tự
+    </script>
+
+3. Phương thức toFixed()  (Dùng để làm tròn một số đến phần thập phân xác định)
+    <script>
+        var a = 1993.123456789;
+        var b = a.toFixed(5); //Biến b sẽ có giá trị là chuỗi 1993.12346
+    </script>
+
+4.Phương thức Number() (Dùng để phân tích một giá trị để trả về một số tương ứng với giá trị đó)
+    <script>
+        var a = Number(true); 
+        var b = Number(false);
+        var c = Number(new Date());//Nếu giá trị là một đối tượng ngày tháng thì phương thức Number() sẽ trả về tổng số mili giây từ 1/1/1970 đến thời điểm của đối tượng ngày tháng đó
+        var d = Number("1993");
+        var e = Number("19 93");//Nếu không thể phân tích giá trị ra số tương ứng thì phương thức Number() sẽ trả về NaN
+    </script>
+
+5. Phương thức parseInt() (Dùng để phân tích một chuỗi để trả về một số nguyên tương ứng)
+    <script>
+        var a = parseInt("20");
+        var b = parseInt("20.55");
+        var c = parseInt("20 40");
+        var d = parseInt(" 20 ");
+        var e = parseInt("20 years");
+        var f = parseInt("years 20");
+    </script>
+
+6. Phương thức parseFloat() (Dùng để phân tích một chuỗi để trả về một số thực tương ứng)
+    <script>
+        var a = parseFloat("20");
+        var b = parseFloat("20.44");
+        var c = parseFloat("20 44");
+        var d = parseFloat(" 20.55 ");
+        var e = parseFloat("20.66 years");
+        var f = parseFloat("years 20.66");
+    </script>
+
+7. Thuộc tính MAX_VALUE (trả về số lớn nhất có thể trong JavaScript )
+    <script>
+        var a = Number.MAX_VALUE; //Biến a sẽ có giá trị là 1.7976931348623157e+308
+    </script>
+
+8. Thuộc tính MIN_VALUE (trả về số gần nhất với số 0)
+    <script>
+        var a = Number.MIN_VALUE; //Biến a sẽ có giá trị là 5e-324
+    </script>
+
+9. Thuộc tính POSITIVE_INFINITY (trả về giá trị dương vô cực Infinity)
+    <script>
+        var a = Number.POSITIVE_INFINITY; //Biến a sẽ có giá trị là Infinity
+    </script>
+
+10. Thuộc tính NEGATIVE_INFINITY (trả về giá trị âm vô cực -Infinity)
+    <script>
+        var a = Number.NEGATIVE_INFINITY; //Biến a sẽ có giá trị là -Infinity
+    </script>
+
+11. Phương thức isFinite() (Dùng để kiểm tra xem một giá trị nào đó có phải là số hữu hạn hay không)
+    <script>
+        var a = Number.isFinite(1993); //true
+        var b = Number.isFinite(-1993); //true
+        var c = Number.isFinite(0); //true
+        var d = Number.isFinite(Infinity); //false
+        var e = Number.isFinite(-Infinity); //false
+        var f = Number.isFinite(0/0); //false
+    </script>
+
+12. Phương thức isInteger() (Dùng để kiểm tra xem một giá trị nào đó có phải là số nguyên hay không)
+    <script>
+        var a = Number.isInteger(1993); //true
+        var b = Number.isInteger(-1993); //true
+        var c = Number.isInteger(1993.5); //false
+        var d = Number.isInteger("1993"); //false
+        var e = Number.isInteger(Infinity); //false
+        var f = Number.isInteger(-Infinity); //false
+    </script>
+
+13. Phương thức isNaN() (Dùng để kiểm tra xem một giá trị nào đó có phải là NaN hay không)
+    <script>
+        var a = Number.isNaN(1993) //false
+        var b = Number.isNaN(-19.93) //false
+        var c = Number.isNaN(50-20) //false
+        var d = Number.isNaN(0) //false
+        var e = Number.isNaN("1993") //false
+        var f = Number.isNaN("JavaScript") //false
+        var g = Number.isNaN("2016/03/03") //false
+        var h = Number.isNaN("") //false
+        var i = Number.isNaN(true) //false
+        var j = Number.isNaN(undefined) //false
+        var k = Number.isNaN("NaN") //false
+        var l = Number.isNaN(NaN) //true
+        var m = Number.isNaN(0 / 0) //true
+    </script>
