@@ -1,0 +1,98 @@
+***Các phương thức xử lý mảng trong JavaScript ***
+1. Chuyển mảng về dạng chuỗi ký tự : toString()
+    <script>
+        var mobile = ["HTC", "NOKIA", "SAMSUNG", "LG", "APPLE"];
+        var text = mobile.toString();
+    </script>
+    => Giá trị của biến text là : HTC,NOKIA,SAMSUNG,LG,APPLE
+
+2. Thêm một phần tử mới vào vị trí cuối mảng : push()
+    <script>
+        var mobile = ["HTC", "NOKIA", "SAMSUNG", "LG", "APPLE"];
+        mobile.push("LENOVO");
+    </script>
+    => Mảng mobile sẽ đc thêm chuỗi LENOVO vào cuối : HTC,NOKIA,SAMSUNG,LG,APPLE,LENOVO
++) Phương thức push() còn trả về tổng số lượng phần tử trong mảng (tính luôn cả phần tử mới vừa được thêm vào)
+    <script>
+        var mobile = ["HTC", "NOKIA", "SAMSUNG", "LG", "APPLE"];
+        var x = mobile.push("LENOVO");   
+    </script>
+    => Biến x có giá trị là 6
+
+3. Xóa phần tử ở vị trí cuối mảng : pop()
+    <script>
+        var mobile = ["HTC", "NOKIA", "SAMSUNG", "LG", "APPLE"];
+        mobile.pop();
+    </script>
+    => Mảng mobile chỉ còn lại : HTC,NOKIA,SAMSUNG,LG
++) Phương thức pop() còn trả về giá trị của phần tử bị xóa
+    <script>
+        var mobile = ["HTC", "NOKIA", "SAMSUNG", "LG", "APPLE"];
+        var x = mobile.pop();
+    </script>
+    => Biến x sẽ có chuỗi giá trị là APPLE
+
+4. Thêm một phần tử mới vào vị trí đầu mảng: unshift()     
+    <script>
+        var mobile = ["HTC", "NOKIA", "SAMSUNG", "LG", "APPLE"];
+        mobile.unshift("LENOVO");    
+    </script>
+    => Chuỗi LENOVO sẽ đc thêm vào đầu mảng mobile: LENOVO,HTC,NOKIA,SAMSUNG,LG,APPLE
++)Phương thức unshift() còn trả về tổng số lượng phần tử trong mảng (tính luôn cả phần tử mới vừa được thêm vào)
+    <script>
+        var mobile = ["HTC", "NOKIA", "SAMSUNG", "LG", "APPLE"];
+        var x = mobile.unshift("LENOVO");
+    </script>
+    =>Biến x sẽ có giá trị là 6
+
+5. Xóa phần tử ở vị trí đầu mảng: shift()
+    <script>
+        var mobile = ["HTC", "NOKIA", "SAMSUNG", "LG", "APPLE"];
+        mobile.shift();
+    </script>
+    => Mảng mobile chỉ còn lại: NOKIA,SAMSUNG,LG,APPLE
++) Phương thức shift() còn trả về giá trị của phần tử bị xóa
+    <script>
+        var mobile = ["HTC", "NOKIA", "SAMSUNG", "LG", "APPLE"];
+        var x = mobile.shift();
+    </script>
+    => Biến x sẽ có giá trị là chuỗi HTC
+
+6. Ghép các mảng lại với nhau: concat()
+    <script>
+        var mobile = ["HTC", "NOKIA"];
+        var motorbike = ["HONDA", "YAMAHA", "SUZUKI"];
+        var SinhVien = ["Nguyễn Thành Nhân", 1993];
+        var city = ["Cần Thơ", "Vĩnh Long"];
+        var data = motorbike.concat(city, SinhVien, mobile);
+    </script>
+    => Khi này mảng data sẽ là: HONDA,YAMAHA,SUZUKI,Cần Thơ,Vĩnh Long,Nguyễn Thành Nhân,1993,HTC,NOKIA
+
+7. Trích xuất một phần của mảng: slice()
+    <script>
+        var data = ["HTC", "NOKIA", "APPLE", "LG", "HONDA", "SYM", "SUZUKI"];
+        var abc = data.slice(1,5);
+    </script>
+    => Mảng abc là: NOKIA,APPLE,LG,HONDA
+
+8.Thêm và xóa phần tử ở vị trí bất kỳ trong mảng: 
++) Xóa phần tử mảng:  splice()
+    <script>
+        var data = ["HTC", "NOKIA", "APPLE", "LG", "HONDA", "SYM", "SUZUKI"];
+        data.splice(1,4);
+    </script>
+    => mảng data sẽ bị xóa bốn phần tử bắt đầu từ phần tử thứ 2 và sẽ còn lại: HTC,SYM,SUZUKI
++) Thêm phần tử vào mảng: splice()
+    <script>
+        var mobile = ["HTC", "Nokia", "SamSung", "LG", "Apple"];
+        mobile.splice(2, 0, " a ", " b ", " c ", " d ");
+    </script>
+    => Mảng mobile sẽ là : HTC,Nokia, a , b , c , d ,SamSung,LG,Apple
+    
+9. Xác định số lượng phần tử của mảng:  length
+    <script>
+        var mobile = ["HTC", "Nokia", "SamSung", "LG", "Apple"];
+        var a = mobile.length;
+    </script>
+    => Biến a có giá trị là 5
+

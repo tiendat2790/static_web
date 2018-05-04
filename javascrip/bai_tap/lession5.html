@@ -1,0 +1,46 @@
+***Sắp xếp thứ tự các phần tử mảng trong JavaScript***
+ 1. Sắp xếp theo thứ tự tăng dần trong từ điển: sort()
+    <script>
+        var fruits = ["Orange", "Mango", "Banana", "Apple"];
+        fruits.sort();
+    </script>
+    => Mảng fruits sẽ đc sắp xếp lại là: Apple,Banana,Mango,Orange
+
+2. Đảo ngược thứ tự của các phần tử trong mảng: reverse()
+    <script>
+        var mobile = ["HTC", "Nokia", "SamSung", "LG", "Apple"];
+        mobile.reverse();
+    </script>
+    => Mảng mobile sẽ là: Apple,LG,SamSung,Nokia,HTC
+
+3. Sắp xếp thứ tự các phần tử mảng có giá trị thuộc kiểu số: sort()
+    <script>
+        var score = [40, 100, 1, 6, 35, 10];
+        score.sort();
+    </script>
+    => Mảng score sẽ đc sắp xếp lại là: 1,10,100,35,40,6
+
+4. Tìm giá trị lớn nhất (hoặc nhỏ nhất) trong mảng
+    <script>
+        var score = [40, 100, 1, 6, 35, 10];
+        function GiaTriLonNhat(arr) {
+        return Math.max.apply(null, arr);
+        }
+        var max = GiaTriLonNhat(score);
+    </script>
+    =>Biến mã có giá trị lớn nhất là: 100
+
+5. Sắp xếp thứ tự các phần tử mảng là đối tượng
+    <script>
+        var student = [
+            {name:"Chung", age:17},
+            {name:"Anh", age:18},
+            {name:"Bao", age:15}
+        ];
+        student.sort(function(a, b){return a.age - b.age});
+    </script>
+    => Mảng student sau khi sắp xếp lại:
+    Bao - 15
+    Chung - 17
+    Anh - 18
+    
