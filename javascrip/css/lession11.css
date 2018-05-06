@@ -36,3 +36,8 @@ button {
     border-radius: 8px;
     border: 1px solid;
 }
+span {
+    color: rgb(238, 43, 17);
+    display: block;
+    margin: 0px 10px 10px 10px ;
+}

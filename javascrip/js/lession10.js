@@ -3,7 +3,7 @@
 //Dat: 01676893232
 
 function callYou() {
-    var name = document.getElementById('name').valua;
+    var name = document.getElementById('name').value;
     var anPhone = '01643160762';
     var hanhPhone = '01656574210';
     var datPhone = '01676893232';
